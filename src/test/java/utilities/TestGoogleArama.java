@@ -17,7 +17,7 @@ public class TestGoogleArama {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
         driver.get("https://google.com");
         WebElement aramaKutusuElementi= driver.findElement(By.xpath("//textarea[@class=\"gLFyf\"]"));
-        aramaKutusuElementi.sendKeys("ARANILACAK METİN GİRİNİZ");
+        aramaKutusuElementi.sendKeys("yandex");
         Actions actions = new Actions(driver);
         actions.sendKeys(Keys.ENTER).perform();
     }
